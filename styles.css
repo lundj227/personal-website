@@ -1,0 +1,94 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333;
+    margin: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 2em;
+    margin: 0.2em 0;
+    text-align: center;
+  }
+  header .tagline {
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  /* Section headings (collapsible titles) */
+  .section {
+    margin: 1.5em 0;
+  }
+  .section-title {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    padding: 0.2em 0;
+  }
+  .section-title:focus {
+    outline: 2px dashed #555;
+  }
+  
+  /* Arrow indicator for collapsible sections */
+  .section-title::after {
+    content: "▸";
+    margin-left: 0.5em;
+  }
+  .section.open .section-title::after {
+    content: "▾";
+  }
+  
+  /* Section content */
+  .section-content {
+    display: none;
+    margin-top: 0.5em;
+  }
+  .section.open .section-content {
+    display: block;
+  }
+  
+  /* Subheadings and lists inside content */
+  .section-content h3 {
+    font-size: 1.2em;
+    margin: 1em 0 0.5em;
+  }
+  .section-content ul {
+    padding-left: 1.2em;
+    margin: 0.5em 0;
+  }
+  .section-content li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Links */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact social icon links */
+  .social-links svg {
+    vertical-align: middle;
+  }
+  .social-links a {
+    margin-right: 1em;
+  }
+  
